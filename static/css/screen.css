@@ -430,16 +430,10 @@ section a:hover {
 }
 
 .first-nav__links {
-    float: left;
-    width: 73%;
-    width: calc(75% - 40px);
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0
+    margin: auto;
+    text-align: center;
 }
 
 .first-nav__links li {
@@ -667,19 +661,6 @@ section a:hover {
 }
 
 @media screen and (max-width:600px) {
-    .first-nav__links {
-        float: left;
-        width: 89.66667%;
-        width: calc(91.66667% - 40px);
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-left: 20px;
-        margin-right: 20px;
-        height: auto;
-        margin-top: 0;
-        margin-bottom: 0
-    }
-
     /* .home-section__header {
         padding: 100px 0 75px;
     } */
