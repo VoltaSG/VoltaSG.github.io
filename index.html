@@ -39,16 +39,16 @@
     </noscript>
 </head>
 
-<body class="no-js">
-    <script>
+<body class="loaded">
+    <!-- <script>
         $('body').removeClass('no-js');
-    </script>
-    <div id="loader-wrapper">
+    </script> -->
+    <!-- <div id="loader-wrapper">
         <div id="loader">
             <p>loading...</p>
             <img src="static/images/pip.gif">
         </div>
-    </div>
+    </div> -->
     <!-- header-->
     <header class="main-header">
         <div class="first-nav"><a class="skip-nav-link" href="#about">skip navigation</a>
@@ -85,45 +85,6 @@
             </div>
         </div>
     </section>
-    <!-- footer-->
-    <footer class="main-footer">
-        <div class="container">
-            <p class="main-footer__copyright"><span>made by thedylone</span></p>
-            <a class="main-footer__gotop js-link js-anchor" style="opacity: 1;" href="#home"><i
-                    class="fas fa-arrow-circle-up"></i></a>
-            <p class="main-footer__links"><a onclick="openModal($('#modal-credits'))">credits</a></p>
-        </div>
-    </footer>
-    <!-- modal stuff -->
-    <script>
-        function openModal(modal) {
-            modal.css("display", "block");;
-            const body = document.body;
-            body.style.top = -1 * window.pageYOffset + 'px';
-            body.style.position = 'fixed';
-        }
-        window.onclick = function (e) {
-            modal = document.getElementById("modal-credits")
-            if (e.target == modal) {
-                modal.style.display = "none";
-                const body = document.body;
-                const scrollY = body.style.top;
-                body.style.position = '';
-                body.style.top = '';
-                window.scrollTo(0, parseInt(scrollY || '0') * -1);
-            }
-        }
-    </script>
-    <!-- credits modal -->
-    <div id="modal-credits" class="modal">
-        <div class="modal-content">
-            <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fas fa-check"></i><a href="https://fontawesome.com/"
-                            target="_blank"></span>font awesome</a> for the pretty nice icons</li>
-            </ul>
-
-        </div>
-    </div>
 </body>
 
 </html>
