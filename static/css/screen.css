@@ -404,7 +404,7 @@ section a:hover {
 }
 
 .skip-nav-link:focus {
-    transform: translateY(0);
+    transform: translateY(var(--header-height));
 }
 
 .first-nav {
